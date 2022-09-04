@@ -1,0 +1,59 @@
+<html>
+    {% load static %}
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0">
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/form.css' %}">
+    </head>
+    <body>
+      <div class="row">
+    <div class="col-md-12">
+      <form action="{% url 'result' %}" method="GET" class="mt-5">
+        
+        <fieldset>
+          
+          <legend><span class="number">1</span> Please Fill this Field</legend>
+        
+          <label for="name">Designation :</label>
+          <select name="designation" id="Designation" >
+            <option value="farmer">Farmer</option>
+            <option value="pvtsector">Private Sector</option>
+
+            <option value="gvt">Government Sector</option>
+
+            <option value="business">Business</option>
+            <option value="Unemployment">Unemployment</option>
+
+          </select>
+
+
+        
+        
+          <label for="age">Age :</label>
+          <input required type="number" name="age"/>
+
+       
+
+          <label for="job">Disease :</label>
+          <select name="disease" id="disease">
+             <option value="yes">Yes</option>
+             <option value="no">No</option>
+         </select>
+        
+        
+       
+        </fieldset>
+          
+          
+       
+        <button type="submit">View Result</button>
+        
+       </form>
+        </div>
+      </div>
+      
+    </body>
+</html>
