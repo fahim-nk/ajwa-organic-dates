@@ -1,0 +1,1 @@
+web: gunicorn ajwa.wsgi --log-file -
